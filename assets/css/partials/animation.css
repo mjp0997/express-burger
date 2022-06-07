@@ -1,0 +1,122 @@
+.animation {
+   width: 60%;
+
+   position: relative;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.animation-content {
+   position: absolute;
+
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.animation-content:nth-child(2n) {
+   animation-name: zRotation;
+}
+
+.animation-content:nth-child(2n + 1) {
+   animation-name: zRotationInvert;
+}
+
+.animation-content > i {
+   font-size: 6rem;
+   
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+
+.animation-content:nth-child(2n) > i {
+   animation-name: zRotationInvert;
+}
+
+.animation-content:nth-child(2n + 1) > i {
+   animation-name: zRotation;
+}
+
+/* Widths */
+
+.animation-2 {
+   width: calc(70% / 3);
+
+   animation-duration: 3s;
+
+   color: var(--light-main-color);
+}
+
+.animation-3 {
+   width: calc(70% / 2);
+
+   animation-duration: 4s;
+
+   color: #B9002D;
+}
+
+.animation-4 {
+   width: calc((70% / 3) * 2);
+   
+   animation-duration: 5s;
+
+   color: #EAD41C;
+}
+
+.animation-5 {
+   width: calc((70% / 6) * 5);
+
+   animation-duration: 6s;
+   
+   color: #F27700;
+}
+
+.animation-6 {
+   width: 70%;
+   
+   animation-duration: 7s;
+   
+   color: #2071F2;
+}
+
+.animation-1 > i,
+.animation-2 > i,
+.animation-3 > i,
+.animation-4 > i,
+.animation-5 > i,
+.animation-6 > i {
+   animation-duration: inherit;
+}
+
+/* Animación */
+
+@keyframes zRotation {
+   0% {
+      transform: rotateZ(0);
+   }
+
+   100% {
+      transform: rotateZ(360deg);
+   }
+}
+
+@keyframes zRotationInvert {
+   0% {
+      transform: rotateZ(0);
+   }
+
+   100% {
+      transform: rotateZ(360deg);
+   }
+}
+
+@keyframes zRotationInvert {
+   0% {
+      transform: rotateZ(0);
+   }
+
+   100% {
+      transform: rotateZ(-360deg);
+   }
+}

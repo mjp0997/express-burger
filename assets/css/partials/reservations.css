@@ -1,0 +1,96 @@
+.reservations {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 3rem;
+}
+
+.reservation {
+   width: 100%;
+
+   padding: 3rem 1rem;
+
+   background-color: #FFFFFF;
+
+   border: 0.1rem solid var(--light-grey);
+   border-radius: 0.5rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   row-gap: 4rem;
+
+   transition: border-color 0.2s ease-in-out, transform 0.2s linear;
+}
+
+.reservation.important {
+   border-color: var(--dark-main-color);
+}
+
+.reservation:hover {
+   border-color: var(--main-color);
+
+   transform: scale(1.05);
+}
+
+.reservation-title {
+   font-size: 2.4rem;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+
+   color: var(--dark-main-color);
+}
+
+.reservation-price {
+   font-size: 7rem;
+   font-weight: 600;
+}
+
+.important > .reservation-price {
+   color: var(--dark-main-color);
+}
+
+.reservation-check {
+   display: flex;
+   align-items: center;
+
+   font-size: 1.4rem;
+   font-weight: 300;
+   text-transform: uppercase;
+
+   color: var(--light-grey);
+}
+
+.reservation-check::before {
+   content: '\f00c';
+
+   font: var(--fa-font-solid);
+   font-size: 2.4rem;
+
+   color: rgb(0, 221, 0);
+
+   margin-right: 0.5rem;
+}
+
+.reservation-button {
+   padding: 1rem 4rem;
+
+   font-size: 2rem;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+
+   border-radius: 1rem;
+
+   color: #FFFFFF;
+   background-color: var(--main-color);
+
+   cursor: pointer;
+
+   transition: background-color 0.2s linear;
+}
+
+.reservation-button:hover {
+   background-color: var(--dark-main-color);
+}

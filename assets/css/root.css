@@ -1,0 +1,17 @@
+:root {
+   /* Fonts */
+   --main-font: 'Roboto Flex', sans-serif;
+   --brand-font: 'Play', sans-serif;
+   --low-brand-font: 'Koulen', cursive;
+
+   /* Colors */
+   --bg-body: rgb(240, 250, 255);
+
+   --black: rgb(0, 14, 36);
+   --grey: #353535;
+   --light-grey: #ACACAC;
+
+   --main-color: #00D9FF;
+   --light-main-color: #76B8F5;
+   --dark-main-color: #0089A1;
+}

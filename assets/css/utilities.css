@@ -1,0 +1,59 @@
+section.section {
+   margin: 0 auto;
+   padding: 6rem 0;
+   
+   width: 80%;
+}
+
+.section-title {
+   font-size: 2.8rem;
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+   text-align: center;
+
+   width: 100%;
+
+   margin-bottom: 2rem;
+
+   position: relative;
+}
+
+.section-title-link {
+   position: absolute;
+   top: 0;
+   right: 0;
+
+   font-size: 1.6rem;
+   font-weight: 400;
+
+   height: 100%;
+
+   display: flex;
+   align-items: center;
+
+   transition: color 0.2s linear;
+}
+
+.section-title-link:hover {
+   color: var(--main-color);
+}
+
+.overlayed-section {
+   position: relative;
+
+   padding: 6rem 10%;
+}
+
+.section-overlay {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+
+   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlayed-section-body {
+   z-index: 2;
+}

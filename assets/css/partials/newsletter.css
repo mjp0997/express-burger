@@ -1,0 +1,90 @@
+.newsletter {
+   background-color: var(--grey);
+   background-image: url('../../images/newsletter.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+   min-height: 80vh;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.newsletter-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   row-gap: 2rem;
+
+   color: #FFFFFF;
+
+   flex-grow: 1;
+}
+
+.newsletter-title {
+   font-size: 4rem;
+   font-weight: 600;
+   letter-spacing: 0.2rem;
+   text-transform: uppercase;
+}
+
+.newsletter-text {
+   font-size: 2rem;
+   font-weight: 300;
+   letter-spacing: 0.1rem;
+
+   color: var(--light-main-color);
+}
+
+.newsletter-form {
+   width: 80%;
+
+   position: relative;
+
+   display: flex;
+
+   font-size: 2rem;
+
+   margin-top: 15rem;
+}
+
+.newsletter-form > input {
+   width: 100%;
+
+   padding: 1.5rem 19.7rem 1.5rem 4rem;
+
+   border-radius: 5rem;
+
+   color: var(--grey);
+
+   text-align: center;
+
+   cursor: text;
+}
+
+.newsletter-form > button {
+   position: absolute;
+   top: 0.2rem;
+   right: 0.2rem;
+   bottom: 0.2rem;
+
+   border-radius: 5rem;
+
+   background-color: var(--main-color);
+
+   padding: 0 2rem;
+
+   font-weight: 500;
+   letter-spacing: 0.1rem;
+
+   cursor: pointer;
+
+   transition: background-color 0.2s ease-in-out;
+}
+
+.newsletter-form > button:hover {
+  background-color: var(--dark-main-color);
+}

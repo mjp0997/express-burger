@@ -1,0 +1,71 @@
+.guests {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-auto-rows: 1fr;
+   gap: 2rem;
+}
+
+.guest {
+   width: 100%;
+
+   overflow: hidden;
+
+   display: flex;
+
+   position: relative;
+}
+
+.guest > img {
+   width: 100%;
+
+   filter: grayscale(1);
+
+   transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.guest:hover > img {
+   filter: grayscale(0);
+   transform: scale(1.1);
+}
+
+.guest-name {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+
+   padding: 2rem 3rem;
+
+   font-size: 2rem;
+   font-weight: 300;
+   letter-spacing: 0.1rem;
+   text-transform: uppercase;
+   text-align: center;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+
+   color: var(--main-color);
+   background-color: rgba(0, 0, 0, 0.6);
+
+   transition: bottom 0.3s ease-in-out;
+}
+
+.guest:hover > .guest-name {
+   bottom: -6rem;
+}
+
+/* Marquee */
+
+.guests-marquee {
+   padding: 1.5rem 0;
+
+   background-color: var(--light-main-color);
+}
+
+.guests-marquee > p {
+   font-size: 2rem;
+   font-weight: 500;
+
+   color: var(--grey);
+}
