@@ -45,7 +45,7 @@
          <i class="fa-brands fa-pinterest"></i>
       </div>
 
-      <button class="header-btn">
+      <button class="header-btn" id="btn">
          <i class="fa-solid fa-cart-shopping"></i>
 
          <span>4</span>
@@ -322,5 +322,87 @@
       <p class="footer-copy">&copy; ExpressFood 2022, todos los derechos reservados.</p>
    </footer>
    <!-- Fin: Footer -->
+
+   <!-- Carrito -->
+   <div class="cart-container" id="container">
+      <div class="cart" id="cart">
+         <div class="cart-close" id="close">
+            <p>Cerrar</p>
+
+            <i class="fa-solid fa-xmark"></i>
+         </div>
+
+         <div class="cart-body">
+            <div class="cart-element">
+               <div class="cart-img">
+                  <img src="./assets/images/burger-2.jpg" alt="menu dish">
+               </div>
+
+               <div class="cart-info">
+                  <div class="cart-row cart-main">
+                     <p class="cart-name">Hamburguesa de pollo</p>
+
+                     <p class="cart-spanned">Cantidad: <span>2</span></p>
+                  </div>
+
+                  <div class="cart-row">
+                     <p class="cart-spanned">Precio: <span>2,49 $</span></p>
+
+                     <p class="cart-spanned">Subtotal: <span>4,98 $</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cart-element">
+               <div class="cart-img">
+                  <img src="./assets/images/burger-1.jpg" alt="menu dish">
+               </div>
+
+               <div class="cart-info">
+                  <div class="cart-row cart-main">
+                     <p class="cart-name">Hamburguesa tradicional</p>
+
+                     <p class="cart-spanned">Cantidad: <span>1</span></p>
+                  </div>
+
+                  <div class="cart-row">
+                     <p class="cart-spanned">Precio: <span>2,99 $</span></p>
+
+                     <p class="cart-spanned">Subtotal: <span>2,99 $</span></p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cart-element">
+               <div class="cart-img">
+                  <img src="./assets/images/fries.jpg" alt="menu dish">
+               </div>
+
+               <div class="cart-info">
+                  <div class="cart-row">
+                     <p class="cart-name">Hamburguesa de pollo</p>
+
+                     <p class="cart-spanned">Cantidad: <span>1</span></p>
+                  </div>
+
+                  <div class="cart-row">
+                     <p class="cart-spanned">Precio: <span>1,49 $</span></p>
+
+                     <p class="cart-spanned">Subtotal: <span>1,49 $</span></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="cart-data">
+            <p class="cart-total">Total: <span>99,46 $</span></p>
+
+            <button class="cart-btn">Pagar</button>
+         </div>
+      </div>
+   </div>
+   <!-- Fin: Carrito -->
+
+   <script src="./assets/js/cart.js"></script>
 </body>
 </html>
