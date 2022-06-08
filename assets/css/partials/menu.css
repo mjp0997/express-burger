@@ -96,8 +96,10 @@
 }
 
 .menu-price {
-   font-size: 2rem;
+   font-size: 2.4rem;
    font-weight: 700;
+
+   color: var(--dark-main-color);
 }
 
 .menu-btn {
