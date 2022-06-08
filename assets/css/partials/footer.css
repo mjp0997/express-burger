@@ -1,0 +1,12 @@
+.footer {
+   padding: 3rem 8%;
+
+   color: var(--black);
+   background-color: var(--main-color);
+
+   display: flex;
+   justify-content: center;
+
+   font-size: 1.8rem;
+   font-weight: 500;
+}

@@ -1,0 +1,56 @@
+.contact {
+   padding: 6rem 8%;
+
+   color: #FFFFFF;
+   background-color: var(--grey);
+
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.contact-phone {
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   row-gap: 1rem;
+}
+
+.contact-tag {
+   font-size: 1.8rem;
+   font-weight: 700;
+   text-transform: uppercase;
+
+   padding: 0.5rem 1rem;
+
+   background-color: var(--main-color);
+}
+
+.contact-mobile {
+   font-size: 4rem;
+   font-weight: 700;
+   letter-spacing: 0.1rem;
+}
+
+.contact-element {
+   display: flex;
+   align-items: center;
+   column-gap: 1rem;
+}
+
+.contact-element > i {
+   font-size: 6rem;
+
+   color: var(--main-color);
+}
+
+.contact-data {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+
+   color: var(--light-grey);
+
+   font-size: 1.8rem;
+   font-weight: 600;
+}
