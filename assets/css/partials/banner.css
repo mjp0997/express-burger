@@ -1,0 +1,39 @@
+.banner {
+   height: calc(100vh - 6rem);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   row-gap: 1rem;
+
+   padding: 0 10%;
+
+   background-image: url('../../images/bg-1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-blend-mode: color-dodge;
+
+   text-transform: uppercase;
+
+   color: #FFFFFF;
+}
+
+.banner-tag {
+   font-size: 1.8rem;
+   font-weight: 900;
+
+   padding: 0.5rem 1rem;
+
+   background-color: var(--main-color);
+}
+
+.banner-slogan {
+   font-size: 8rem;
+   font-weight: 700;
+   line-height: 130%;
+
+   width: 50%;
+}
