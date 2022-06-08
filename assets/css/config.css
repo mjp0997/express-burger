@@ -23,6 +23,7 @@ body {
    list-style: none;
 
    color: inherit;
+   background-color: transparent;
 
    font-family: var(--main-font);
    line-height: 100%;
